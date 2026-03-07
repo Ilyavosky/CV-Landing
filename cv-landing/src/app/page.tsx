@@ -1,6 +1,6 @@
 "use client";
 
-import { cvData }                    from "@/data/cvData";
+import {cvData} from "../data/cvData";
 import { Grain, GridBg, Orbs, Scanline } from "@/components/background";
 import {
   HeroSection,
