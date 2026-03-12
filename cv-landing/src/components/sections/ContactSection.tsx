@@ -6,10 +6,10 @@ type ContactProps = Pick<CVData, "email" | "phone" | "linkedin" | "github">;
 
 export function ContactSection({ email, phone, linkedin, github }: ContactProps) {
   const items = [
-    { label: "Email",    value: email   },
-    { label: "Teléfono", value: phone   },
+    { label: "Email", value: email },
+    { label: "Teléfono", value: phone },
     { label: "LinkedIn", value: linkedin },
-    { label: "GitHub",   value: github  },
+    { label: "GitHub", value: github },
   ];
 
   return (
@@ -37,7 +37,7 @@ export function ContactSection({ email, phone, linkedin, github }: ContactProps)
 
       <div style={{ textAlign: "center", marginTop: 60 }}>
         <p style={{ fontFamily: fonts.mono, fontSize: 10, color: colors.text.faint, letterSpacing: "0.2em" }}>
-          ILYA CORTÉS RUIZ © 2026 — TUXTLA GUTIÉRREZ, CHIAPAS
+          ILYA CORTÉS RUIZ -- 2026 -- TUXTLA GUTIÉRREZ, CHIAPAS
         </p>
       </div>
     </FadeSection>

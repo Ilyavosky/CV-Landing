@@ -1,7 +1,3 @@
-// ─────────────────────────────────────────────
-//  Section — Skills
-// ─────────────────────────────────────────────
-
 import { fonts, skillAccents } from "@/styles/tokens";
 import { FadeSection, Pill, SectionLabel } from "@/components/ui";
 

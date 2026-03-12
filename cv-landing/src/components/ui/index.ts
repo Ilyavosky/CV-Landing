@@ -1,4 +1,4 @@
-export { Pill }         from "./Pill";
+export { Pill } from "./Pill";
 export { SectionLabel } from "./SectionLabel";
-export { FadeSection }  from "./FadeSection";
-export { EntryCard }    from "./EntryCard";
+export { FadeSection } from "./FadeSection";
+export { ThemedProjectCard } from "../ui/ThemedProjectCard";

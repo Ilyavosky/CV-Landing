@@ -28,7 +28,6 @@ export function HeroSection({ data }: HeroSectionProps) {
       position: "relative",
       zIndex: 2,
     }}>
-      {/* Top bar */}
       <div style={{
         position: "absolute",
         top: 32,
@@ -40,13 +39,13 @@ export function HeroSection({ data }: HeroSectionProps) {
         animation: "fadeInUp 0.8s ease 0.1s both",
       }}>
         <span style={{ fontFamily: fonts.mono, fontSize: 11, color: colors.text.muted, letterSpacing: "0.2em" }}>
-          PORTFOLIO.CV — 2026
+          PORTFOLIO.CV -- 2026
         </span>
         <nav style={{ display: "flex", gap: 24 }}>
           {[
-            { label: "GitHub",   href: "https://github.com/Ilyavosky" },
+            { label: "GitHub", href: "https://github.com/Ilyavosky" },
             { label: "LinkedIn", href: "https://linkedin.com/in/ilya-cortes-ruiz" },
-            { label: "Email",    href: `mailto:${data.email}` },
+            { label: "Email", href: `mailto:${data.email}` },
           ].map(({ label, href }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer"
               style={{ fontFamily: fonts.mono, fontSize: 11, color: colors.text.muted, letterSpacing: "0.1em", transition: "color 0.2s" }}
@@ -59,11 +58,10 @@ export function HeroSection({ data }: HeroSectionProps) {
         </nav>
       </div>
 
-      {/* Main content */}
       <div style={{ maxWidth: 900 }}>
         <div style={{ animation: "fadeInUp 0.6s ease 0.2s both" }}>
           <span style={{ fontFamily: fonts.mono, fontSize: 12, color: colors.accent.green, letterSpacing: "0.3em" }}>
-            ▸ DISPONIBLE PARA PRÁCTICAS PROFESIONALES
+            DISPONIBLE PARA PRACTICAS PROFESIONALES
           </span>
         </div>
 
@@ -77,11 +75,10 @@ export function HeroSection({ data }: HeroSectionProps) {
           textShadow: "0 0 80px rgba(255,255,255,0.05)",
         }}>
           ILYA<br />
-          <span style={{ color: colors.accent.green }}>CORTÉS</span><br />
+          <span style={{ color: colors.accent.green }}>CORTES</span><br />
           RUIZ
         </h1>
 
-        {/* Línea animada */}
         <div style={{
           height: 2,
           background: colors.accent.green,
@@ -89,7 +86,6 @@ export function HeroSection({ data }: HeroSectionProps) {
           animation: started ? "heroLine 1.2s ease 0.8s both" : "none",
         }} />
 
-        {/* Typewriter subtitle */}
         <div style={{ marginTop: 20, height: 28 }}>
           <span style={{ fontFamily: fonts.mono, fontSize: "clamp(13px, 2vw, 17px)", color: colors.text.secondary, letterSpacing: "0.15em" }}>
             {typed}
@@ -97,7 +93,6 @@ export function HeroSection({ data }: HeroSectionProps) {
           </span>
         </div>
 
-        {/* About */}
         <p style={{
           color: colors.text.muted,
           fontSize: 15,
@@ -111,7 +106,6 @@ export function HeroSection({ data }: HeroSectionProps) {
           {data.about}
         </p>
 
-        {/* CTAs */}
         <div style={{ display: "flex", gap: 16, marginTop: 40, flexWrap: "wrap", animation: "fadeInUp 0.8s ease 1.4s both" }}>
           <a href={`mailto:${data.email}`}>
             <button
@@ -119,7 +113,7 @@ export function HeroSection({ data }: HeroSectionProps) {
               onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = `0 8px 30px ${colors.accent.green}59`; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}
             >
-              CONTACTAR →
+              CONTACTAR
             </button>
           </a>
           <button
@@ -128,12 +122,11 @@ export function HeroSection({ data }: HeroSectionProps) {
             onMouseLeave={e => { e.currentTarget.style.borderColor = colors.border; e.currentTarget.style.color = colors.text.primary; }}
             onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
           >
-            VER PROYECTOS ↓
+            VER PROYECTOS
           </button>
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div style={{
         position: "absolute", bottom: 40, left: "50%", transform: "translateX(-50%)",
         display: "flex", flexDirection: "column", alignItems: "center", gap: 8,

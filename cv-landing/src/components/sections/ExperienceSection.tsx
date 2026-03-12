@@ -1,8 +1,4 @@
-// ─────────────────────────────────────────────
-//  Section — Experiencia Técnica
-// ─────────────────────────────────────────────
-
-import { FadeSection, EntryCard, SectionLabel } from "@/components/ui";
+import { FadeSection, ThemedProjectCard, SectionLabel } from "@/components/ui";
 import type { Entry } from "@/data/types";
 
 interface ExperienceSectionProps {
@@ -15,9 +11,9 @@ export function ExperienceSection({ experience }: ExperienceSectionProps) {
       <FadeSection>
         <SectionLabel label="Experiencia Técnica" />
       </FadeSection>
-      <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
         {experience.map((entry, i) => (
-          <EntryCard key={entry.name} entry={entry} index={i} />
+          <ThemedProjectCard key={entry.name} entry={entry} index={i} flipped={i % 2 !== 0} />
         ))}
       </div>
     </div>

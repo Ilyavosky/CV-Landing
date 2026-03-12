@@ -3,8 +3,8 @@ import { googleFontsUrl } from "@/styles/tokens";
 import { globalKeyframes } from "@/styles/keyframes";
 
 export const metadata: Metadata = {
-  title: "Ilya Cortés Ruiz — Backend Developer",
-  description: "Portfolio / CV de Ilya Cortés Ruiz, estudiante de Ingeniería en TI con enfoque en backend, cloud y Android.",
+  title: "Ilya Cortes Ruiz — Backend Developer",
+  description: "Portfolio / CV de Ilya Cortes Ruiz, estudiante de Ingenieria en TI con enfoque en backend, cloud y Android.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

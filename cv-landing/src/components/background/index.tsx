@@ -26,10 +26,10 @@ export function GridBg() {
 }
 
 const ORB_CONFIG = [
-  { c: colors.accent.green,  x: "10%", y: "20%", s: 400, blur: 150, dur: 18 },
+  { c: colors.accent.green, x: "10%", y: "20%", s: 400, blur: 150, dur: 18 },
   { c: colors.accent.purple, x: "80%", y: "60%", s: 350, blur: 120, dur: 22 },
-  { c: colors.accent.red,    x: "60%", y: "10%", s: 280, blur: 100, dur: 26 },
-  { c: colors.accent.yellow, x: "20%", y: "80%", s: 200, blur: 80,  dur: 30 },
+  { c: colors.accent.red, x: "60%", y: "10%", s: 280, blur: 100, dur: 26 },
+  { c: colors.accent.yellow, x: "20%", y: "80%", s: 200, blur: 80, dur: 30 },
 ] as const;
 
 export function Orbs() {

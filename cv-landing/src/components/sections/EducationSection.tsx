@@ -11,8 +11,6 @@ export function EducationSection({ education, certs }: EducationSectionProps) {
   return (
     <FadeSection style={{ marginBottom: 100 }}>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 60 }}>
-
-        {/* Educación */}
         <div>
           <SectionLabel label="Educación" />
           <div style={{ borderLeft: `2px solid ${colors.accent.green}`, paddingLeft: 24 }}>
@@ -31,9 +29,8 @@ export function EducationSection({ education, certs }: EducationSectionProps) {
           </div>
         </div>
 
-        {/* Certificaciones */}
         <div>
-          <SectionLabel label="Certificaciones" />
+          <SectionLabel label="Certificaciones" color={colors.accent.yellow} />
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {certs.map((cert) => (
               <div
@@ -46,14 +43,13 @@ export function EducationSection({ education, certs }: EducationSectionProps) {
                   {cert.title}
                 </p>
                 <p style={{ fontFamily: fonts.mono, fontSize: 11, color: colors.text.muted, marginTop: 4 }}>
-                  {cert.org} · {cert.year} ·{" "}
+                  {cert.org} / {cert.year} /{" "}
                   <span style={{ color: colors.accent.yellow }}>{cert.score}</span>
                 </p>
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </FadeSection>
   );

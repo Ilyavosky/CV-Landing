@@ -1,8 +1,3 @@
-// ─────────────────────────────────────────────
-//  UI Atom — Pill
-//  Etiqueta de tecnología con hover colorido
-// ─────────────────────────────────────────────
-
 "use client";
 
 import { useState } from "react";

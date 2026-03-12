@@ -3,14 +3,14 @@ export const colors = {
   surface: "rgba(255,255,255,0.02)",
   border: "rgba(255,255,255,0.08)",
   text: {
-    primary:   "#ffffff",
+    primary: "#ffffff",
     secondary: "rgba(255,255,255,0.65)",
-    muted:     "rgba(255,255,255,0.35)",
-    faint:     "rgba(255,255,255,0.15)",
+    muted: "rgba(255,255,255,0.35)",
+    faint: "rgba(255,255,255,0.15)",
   },
   accent: {
-    green:  "#00ff88",
-    red:    "#ff6b6b",
+    green: "#00ff88",
+    red: "#ff6b6b",
     yellow: "#ffd93d",
     purple: "#a78bfa",
   },
@@ -25,8 +25,8 @@ export const skillAccents = [
 
 export const fonts = {
   display: "'Bebas Neue', sans-serif",
-  mono:    "'Space Mono', monospace",
-  body:    "'DM Sans', sans-serif",
+  mono: "'Space Mono', monospace",
+  body: "'DM Sans', sans-serif",
 } as const;
 
 export const googleFontsUrl =

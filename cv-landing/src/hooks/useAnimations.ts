@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-
 export function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -16,7 +15,6 @@ export function useInView(threshold = 0.15) {
 
   return [ref, visible] as const;
 }
-
 
 export function useTypewriter(text: string, speed = 55, start = true) {
   const [display, setDisplay] = useState("");
